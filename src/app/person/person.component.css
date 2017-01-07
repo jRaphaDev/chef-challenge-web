@@ -1,0 +1,28 @@
+.example-card {
+  width: 440px;
+}
+
+.example-header-image {
+  background-image: url('assets/imgs/shiba2.jpg');
+  background-size: cover;
+}
+
+.dir{
+  float: left;
+
+}
+ .cent {
+    padding-right: 750px;   
+  }
+.esq{
+  padding-right: 1250px;  
+}
+
+.container-card {
+  width: 50%!important;
+}
+
+md-grid-tile {
+
+    overflow: visible;
+}
