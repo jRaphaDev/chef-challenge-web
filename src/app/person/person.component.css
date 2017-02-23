@@ -7,22 +7,10 @@
   background-size: cover;
 }
 
-.dir{
-  float: left;
-
-}
- .cent {
-    padding-right: 750px;   
-  }
-.esq{
-  padding-right: 1250px;  
-}
-
 .container-card {
   width: 50%!important;
 }
 
 md-grid-tile {
-
     overflow: visible;
 }
