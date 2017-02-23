@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { PersonComponent } from './person/person.component';
+import { PersonService } from './person/shared/person.service';
 import { PersonFormComponent } from './person/person-form/person-form.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
@@ -37,7 +38,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [PersonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

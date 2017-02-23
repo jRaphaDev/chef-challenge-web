@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Http, Response } from '@angular/http';
+import { PersonService } from '../shared/person.service';
+import {Observable} from 'rxjs/Observable';
+
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-person-form',
@@ -12,11 +17,14 @@ export class PersonFormComponent {
     nome: ['', Validators.required]
   });
 
-  constructor(public fb: FormBuilder) {}
+  constructor(
+    private fb: FormBuilder,
+    private personService: PersonService
+  ) {}
 
-  doLogin(event) {
-    console.log(event);
-    console.log(this.personForm.value);
+  createPerson() {
+    return this.personService.postPerson(this.personForm.value)
+      .subscribe(data => console.log(data))
   }
 
 }

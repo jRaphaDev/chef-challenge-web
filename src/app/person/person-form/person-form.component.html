@@ -4,11 +4,11 @@
         <md-card-title>Registry Person</md-card-title>
       </md-card-header>
       <md-card-content>
-        <form [formGroup]="personForm" (ngSubmit)="doLogin($event)">
+        <form [formGroup]="personForm" (ngSubmit)="createPerson()">
           <input formControlName="nome" type="text" placeholder="Your name">
           <input formControlName="email" type="email" placeholder="your-email@provider.com">
-        <button type="submit">Log in</button>
-      </form>
+        <button (click)="createPerson()">Create</button>
+        </form>
       </md-card-content>
       <br>
 </md-card>
