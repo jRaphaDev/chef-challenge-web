@@ -15,10 +15,10 @@ import { FooterComponent } from './footer/footer.component';
 import 'hammerjs';
 
 const appRoutes: Routes = [
-  { path: 'home', component: AppComponent },
+  { path: 'home', component: PersonComponent },
   { path: 'person', component: PersonComponent },
   { path: 'person/add', component: PersonFormComponent },
-  { path: '**', component: AppComponent }
+  { path: '**', component: PersonComponent }
 ];
 
 @NgModule({
