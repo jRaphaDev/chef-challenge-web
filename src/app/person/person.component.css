@@ -1,14 +1,14 @@
 .example-card {
-  width: 440px;
+    width: 440px;
 }
 
 .example-header-image {
-  background-image: url('../../assets/imgs/shiba2.jpg');
-  background-size: cover;
+    background-image: url('../../assets/imgs/shiba2.jpg');
+    background-size: cover;
 }
 
 .container-card {
-  width: 50%!important;
+    width: 50%!important;
 }
 
 md-grid-tile {
