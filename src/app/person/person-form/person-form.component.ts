@@ -14,7 +14,8 @@ export class PersonFormComponent {
 
   public personForm = this.fb.group({
     email: ['', Validators.required],
-    nome: ['', Validators.required]
+    name: ['', Validators.required],
+    img: ['', Validators.required]
   });
 
   constructor(

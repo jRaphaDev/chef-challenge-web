@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Rx';
 @Injectable()
 export class PersonService {
 
-  private URL_BASE = "http://localhost:9091/chef-challenge-service/person";
+  private URL_BASE = "http://localhost:3000/v1/users";
 
   constructor(private http: Http) { }
 

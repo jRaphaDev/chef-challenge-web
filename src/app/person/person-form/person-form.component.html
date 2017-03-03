@@ -5,8 +5,9 @@
     </md-card-header>
     <md-card-content>
         <form [formGroup]="personForm" (ngSubmit)="createPerson()">
-            <input formControlName="nome" type="text" placeholder="Your name">
+            <input formControlName="name" type="text" placeholder="Your name">
             <input formControlName="email" type="email" placeholder="your-email@provider.com">
+            <input formControlName="img" type="text" placeholder="img url">
             <button (click)="createPerson()">Create</button>
         </form>
     </md-card-content>

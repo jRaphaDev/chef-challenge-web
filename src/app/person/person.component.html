@@ -1,16 +1,13 @@
 <h1> People </h1>
-<md-grid-list cols="1">
-    <md-grid-tile *ngFor="let item of [1, 2, 3, 4, 5]">
+<md-grid-list cols="2">
+    <md-grid-tile *ngFor="let person of people">
         <md-card class="example-card">
             <md-card-header>
                 <div md-card-avatar class="example-header-image"></div>
-                <md-card-title>Shiba Inu</md-card-title>
-                <md-card-subtitle>Dog Breed</md-card-subtitle>
+                <md-card-title>{{person.name}}</md-card-title>
+                <md-card-subtitle>{{person.email}}</md-card-subtitle>
             </md-card-header>
-            <img md-card-image src="assets/imgs/shiba2.jpg">
-            <md-card-content>
-                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
-            </md-card-content>
+            <img md-card-image src="{{person.img}}">
         </md-card>
     </md-grid-tile>
 </md-grid-list>
